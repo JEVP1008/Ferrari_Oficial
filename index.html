@@ -232,5 +232,18 @@ Producción limitada a solo 799 unidades.</p>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="banner/banner.js"></script>
+<script>
+let visitas = localStorage.getItem("visitas");
+
+if(visitas == null){
+    visitas = 0;
+}
+
+visitas++;
+
+localStorage.setItem("visitas", visitas);
+
+document.write("Visitas: " + visitas);
+</script>
 </body>
 </html>
